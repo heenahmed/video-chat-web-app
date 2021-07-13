@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<title>Samagam</title>
+<link rel="shortcut icon" href="img/logo.jpg" >
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/homebg.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.meattitle{
+    background-color: rgba(58, 58, 221, 0.952);
+    text-align: center;
+    margin: 10%;
+    
+
+}
+
+.w3-display-left {
+    left: 30%;
+}
+
+.joinmeet{
+    border-style: solid;
+    left: 30%;
+    margin: 30%;
+}
+
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="img/logo.jpg" height="10%" width="5%" alt="LOGO"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small meattitle">SAMAGAM</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium meattitle">SAMAGAM</span><br>
+    <span class="w3-large">Lets meet and discuss ideas , That matters !</span>
+    <p><a href="https://agile-waters-28839.herokuapp.com/" class="w3-button joinmeet w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Join Meeting</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <a href="https://github.com/heenahmed/video-chat-web-app"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/heenaahmed/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">FEATURES</h3>
+  <p class="w3-center w3-large">Key features of the meeting application</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Video calling</p>
+      <p>This application allows two or more than two participants to join the meeting and have an uninterrupted audio and vedio conference call.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-user-circle-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">UserName</p>
+      <p>As the meet window is opened , a pop up box asks for entering Username, This username uniquely identifies the user , while chatting this name will be used as their name.</p>
+  </div>
+    <div class="w3-quarter">
+      <i class="fa fa-microphone w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Mute/Unmute</p>
+      <p>The mute/unmute button in the bottom left corner helps in muting and unmuting the user audio as and when desired, just with a click.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-play-circle-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Video On/Off</p>
+      <p>The video ON/OFF button in the bottom left corner helps in mturning the user video On an off as and when desired, just with a clicking on button . when hovered over its colour changes to blue</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-user-plus w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Add participants</p>
+      <p>The add participants button helps in copying the URL ro be shared with the participnats for easy joing to the meet.</p>
+    </div>
+    <div class="w3-quarter">
+        <i class="fa fa-phone w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Leave Meeting</p>
+        <p>When the meeting is done , user can click on the leave meeting button , this will remove them from the meeting.</p>
+    </div>
+    <div class="w3-quarter">
+        <i class="fa fa-comments w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Live Chat</p>
+        <p>Chat screen appears in right side of the window , this hprovides text messaging ability.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://github.com/heenahmed/video-chat-web-app"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/heenaahmed/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
